@@ -1,0 +1,62 @@
+{
+	"info": {
+		"_postman_id": "29746eab-8956-438f-9fc8-88ae9243f0de",
+		"name": "tiny_url",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "add url",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\"http://localhost:5000/url/add\"",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/url/add",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"url",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get url",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/url/get/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"url",
+						"get",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
